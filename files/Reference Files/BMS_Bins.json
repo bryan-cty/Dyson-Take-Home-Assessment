@@ -1,0 +1,198 @@
+{
+    "powerBins": {
+        "jsonLoc": "usage.dischargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [3],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "power",
+                "unit": "watt",
+                "symbol": "W",
+                "partitions" : [95, 250]
+            }
+        ]
+    },
+    "dischargeBandBins" : {
+        "jsonLoc": "usage.dischargeLog",
+        "field": null,
+        "dimensions" : 2,
+        "sizes" : [3, 3],
+        "unit": "second",
+        "bins" : [
+            {
+                "name": "voltage",
+                "unit": "volt",
+                "symbol": "V",
+                "partitions": [3.3, 4.0]
+            },
+            {
+                "name": "temperature",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [15, 45]
+            }
+        ]
+    },
+    "dischargeDurationBins": {
+        "jsonLoc": "usage.dischargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [23],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "duration",
+                "unit": "second",
+                "symbol": "s",
+                "partitions": [5, 10, 15, 20, 25, 30, 45, 60,
+                               75, 90, 105, 120, 180, 240, 300, 360,
+                               600, 900, 1200, 1800, 2400, 3000]
+            }
+        ]
+    },
+    "dischargeStartTempBins": {
+        "jsonLoc": "usage.dischargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [10],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "start temperature",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [5, 10, 15, 20, 25, 30, 35, 45, 60]
+            }
+        ]
+    },
+    "dischargeOffTimeBins": {
+        "jsonLoc": "usage.dischargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [6],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "off time",
+                "unit": "second",
+                "symbol": "s",
+                "partitions": [5, 20, 60, 300, 1800]
+            }
+        ]
+    },
+    "dischargeBtwChargesBins": {
+        "jsonLoc": "usage.dischargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [15],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "off time",
+                "unit": "minute",
+                "symbol": "m",
+                "partitions": [1, 2, 4, 6, 8, 10, 15, 20,
+                               25, 30, 35, 40, 50, 60]
+            }
+        ]
+    },
+    "chargeMaintainTempBins": {
+        "jsonLoc": "usage.chargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [6],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "charge maintain temp",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [20, 25, 30, 35, 40]
+            }
+        ]
+    },
+    "chargeBandBins" : {
+        "jsonLoc": "usage.chargeLog",
+        "field": null,
+        "dimensions" : 2,
+        "sizes" : [3, 3],
+        "unit": "second",
+        "bins" : [
+            {
+                "name": "voltage",
+                "unit": "volt",
+                "symbol": "V",
+                "partitions": [3.3, 4.15]
+            },
+            {
+                "name": "temperature",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [15, 45]
+            }
+        ]
+    },
+    "chargeDurationBins": {
+        "jsonLoc": "usage.chargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [16],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "duration",
+                "unit": "minute",
+                "symbol": "m",
+                "partitions": [5, 10, 15, 30, 45, 60, 75, 90, 105, 120, 150, 180, 210, 240, 270]
+            }
+        ]
+    },
+    "chargeAmbientTempPreCustomerBins": {
+        "jsonLoc": "usage.chargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [6],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "ambient temp",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [20, 25, 30, 40, 50]
+            }
+        ]
+    },
+    "chargeAmbientTempCustomerBins": {
+        "jsonLoc": "usage.chargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [6],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "ambient temp",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [15, 20, 25, 30, 40]
+            }
+        ]
+    },
+    "minCellVoltAtChargeStartBins": {
+        "jsonLoc": "usage.chargeLog",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [16],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "min cell voltage",
+                "unit": "volt",
+                "symbol": "V",
+                "partitions": [2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3,
+                               3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0]
+            }
+        ]
+    }
+}

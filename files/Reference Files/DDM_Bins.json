@@ -1,0 +1,329 @@
+{
+    "powerOnModeBins": {
+        "jsonLoc": "productUsage",
+        "field": null,
+        "dimensions": 1,
+        "sizes": [3],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "mode",
+                "unit": "enum",
+                "symbol": null,
+                "partitions": ["Boost", "Med", "Eco"]
+            }
+        ]        
+    },
+    "longestOperatingDurationBins": {
+        "jsonLoc": "productUsage",
+        "field": null,
+        "dimensions": 2,
+        "sizes": [3, 3],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "tool",
+                "unit": "enum",
+                "symbol": null,
+                "partitions" : ["None", "BLDC", "BDC"]
+            },
+            {
+                "name": "mode",
+                "unit": "enum",
+                "symbol": null,
+                "partitions": ["Boost", "Med", "Eco"]
+            }
+        ]        
+    },
+    "ddm683_UsageDurationBins": {
+        "jsonLoc": "productUsage",
+        "field": "bins",
+        "dimensions": 3,
+        "sizes": [3, 3, 6],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "tool",
+                "unit": "enum",
+                "symbol": null,
+                "partitions" : ["None", "BLDC", "BDC"]
+            },
+            {
+                "name": "mode",
+                "unit": "enum",
+                "symbol": null,
+                "partitions": ["Boost", "Med", "Eco"]
+            },
+            {
+                "name": "durationBin",
+                "unit": "enum",
+                "symbol": null,
+                "partitions": ["d1", "d2", "d3", "d4", "d5" ]
+            }
+        ]        
+    },
+    "ddm683_UsageBins": {
+        "jsonLoc": "productUsage",
+        "field": null,
+        "dimensions": 2,
+        "sizes": [3, 3],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "tool",
+                "unit": "enum",
+                "symbol": null,
+                "partitions" : ["None", "BLDC", "BDC"]
+            },
+            {
+                "name": "mode",
+                "unit": "enum",
+                "symbol": null,
+                "partitions": ["Boost", "Med", "Eco"]
+            }
+        ]        
+    },
+    "ddm683_pwrOnFwiCountBins": {
+        "jsonLoc": "productUsage",
+        "field": null,
+        "dimensions": 2,
+        "sizes": [2, 3],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "FWI Alert",
+                "unit": "bool",
+                "symbol": null,
+                "partitions" : [false, true]
+            },
+            {
+                "name": "mode",
+                "unit": "enum",
+                "symbol": null,
+                "partitions": ["Boost", "Med", "Eco"]
+            }
+        ]        
+    },
+    "ddm683_usageFwiStateBins": {
+        "jsonLoc": "productUsage",
+        "field": null,
+        "dimensions": 2,
+        "sizes": [2, 3],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "FWI Alert",
+                "unit": "bool",
+                "symbol": null,
+                "partitions" : [true, false]
+            },
+            {
+                "name": "mode",
+                "unit": "enum",
+                "symbol": null,
+                "partitions": ["Boost", "Med", "Eco"]
+            }
+        ]        
+    },
+    "ddm683_SpeedBins": {
+        "jsonLoc": "productUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [24],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "krpm",
+                "symbol": "krpm",
+                "partitions": [50, 55, 60, 65, 70, 75, 80, 85, 90, 95,
+                               100, 105, 110, 115, 120, 125, 130, 135,
+                               140, 145, 150, 155, 160]
+            }
+        ]        
+    },
+    "ddm683_AmbPressBins": {
+        "jsonLoc": "productUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [7],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "pressure",
+                "unit": "kilo-pascal",
+                "symbol": "kPa",
+                "partitions": [70.1, 74.7, 79.5, 84.6, 91.3, 95.5, 101.3]
+            }
+        ]        
+    },
+    "ddm683_AmbTempBins": {
+        "jsonLoc": "productUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [7],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "temperature",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [0, 10, 20, 30, 40, 50]
+            }
+        ]        
+    },
+    "ddm683_ExhaustTempBins": {
+        "jsonLoc": "productUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [7],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "temperature",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [30, 40, 50, 60, 80, 100]
+            }
+        ]        
+    },
+    "ddm683_normDPressOnFwiOffBins": {
+        "jsonLoc": "productUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [25],
+        "unit": "count",
+        "bins": [
+            {
+                "name": "pressure",
+                "unit": "kilo-pascal",
+                "symbol": "kPa",
+                "partitions": [4.0, 5.0, 6.0, 7.0, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5,
+                               11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 15.0,
+                               15.5, 16.0, 16.5, 17.0, 17.5]
+            }
+        ]        
+    },
+    "ddm692_SpeedBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [25],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "krpm",
+                "symbol": "krpm",
+                "partitions": [45, 55, 65, 75, 85, 95, 105, 110, 115, 120, 
+                               122.5, 125, 127.5, 130, 132.5, 135, 137.5, 
+                               140, 142.5, 145, 147.5, 150, 155, 160]
+            }
+        ]        
+    },
+    "ddm692_PressBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [9],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "kilo-pascal",
+                "symbol": "kPa",
+                "partitions": [70, 75, 80, 85, 90, 95, 100, 105]
+            }
+        ]        
+    },
+    "ddm692_BarTempBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [10],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "krpm",
+                "symbol": "krpm",
+                "partitions": [10, 20, 30, 40, 50, 60, 70, 80, 90]
+            }
+        ]        
+    },
+    "ddm692_FisfTempBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [10],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [14, 28, 42, 56, 70, 84, 98, 112, 126]
+            }
+        ]        
+    },
+    "ddm692_PowerBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [14],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "watts",
+                "symbol": "W",
+                "partitions": [50, 75, 100, 125, 150, 200, 300, 400, 500, 600, 700, 800, 900]
+            }
+        ]        
+    },
+    "ddm692_NormSpeedBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [14],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "krpm",
+                "symbol": "krpm",
+                "partitions": [109.9, 111.9, 113.9, 115.9, 117.9, 119.9, 121.9, 123.9, 125.9, 127.9, 129.9, 133, 150]
+            }
+        ]        
+    },
+    "ddm692_ExhaustTempBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [10],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "celsius",
+                "symbol": "C",
+                "partitions": [10, 20, 30, 40, 50, 60, 70, 80, 90]
+            }
+        ]        
+    },
+    "ddm590_SpeedBins": {
+        "jsonLoc": "ddmUsage",
+        "field": "bins",
+        "dimensions": 1,
+        "sizes": [24],
+        "unit": "second",
+        "bins": [
+            {
+                "name": "speed",
+                "unit": "krpm",
+                "symbol": "krpm",
+                "partitions": [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160]
+            }
+        ]        
+    }
+}
